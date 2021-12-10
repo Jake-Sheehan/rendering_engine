@@ -73,7 +73,7 @@ int main()
 
 	// -------------------- LIGHTING --------------------
 
-	const char* lightPath = "models/light_source_01/light_source_01.obj";
+	const char* lightPath = "models/light_source_01/light_source_01.object";
 	model::LightSource light = model::LightSource(
 		lightPath,                         // path to wavefront object
 		objectShader,                      // object shader
@@ -88,30 +88,30 @@ int main()
 
 	// -------------------- SCENE OBJECTS --------------------
 
-	const char* lampPath = "models/lamp/lamp.obj";
+	const char* lampPath = "models/lamp/lamp.object";
 	model::Model lamp = model::Model(lampPath);
 	lamp.translate(12.0f, 0.25f, 0.0f);
 	lamp.rotate(90.0f, 'y');
 
-	const char* tablePath = "models/table/table.obj";
+	const char* tablePath = "models/table/table.object";
 	model::Model table = model::Model(tablePath);
 	table.scale(4.0f, 4.0f, 4.0f);
 
-	const char* bookPath = "models/book/book.obj";
+	const char* bookPath = "models/book/book.object";
 	model::Model book = model::Model(bookPath);
 	book.translate(0.0f, 0.0f, 10.0f);
 	book.rotate(-90.0f, 'y');
 
-	const char* headphonesPath = "models/headphones/headphones.obj";
+	const char* headphonesPath = "models/headphones/headphones.object";
 	model::Model headphones = model::Model(headphonesPath);
 	headphones.translate(5.0f, 0.5f, 6.0f);
 	headphones.rotate(225.0f, 'y');
 
-	const char* penPath = "models/pen/pen.obj";
+	const char* penPath = "models/pen/pen.object";
 	model::Model pen = model::Model(penPath);
 	pen.translate(-2.0f, 0.25f, 11.0f);
 
-	const char* cupPath = "models/cup/cup.obj";
+	const char* cupPath = "models/cup/cup.object";
 	model::Model cup = model::Model(cupPath);
 	cup.translate(-5.0f, 0.1f, 5.0f);
 	cup.rotate(180.0f, 'y');

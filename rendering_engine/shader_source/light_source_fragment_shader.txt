@@ -1,0 +1,11 @@
+#version 330 core
+in vec2 textureFromVS;
+out vec4 FragColor;
+
+uniform sampler2D textureObj;
+uniform float ambientStrength;
+
+void main()
+{
+	FragColor = ambientStrength * texture(textureObj, textureFromVS);
+}
